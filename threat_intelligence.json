@@ -1,0 +1,226 @@
+{
+  "iocs": [
+    {
+      "value": "192.168.1.100",
+      "ioc_type": "ipv4",
+      "source": "Sample Data",
+      "timestamp": "2025-04-18T13:03:39.317735",
+      "context": "e attack infrastructure includes IP addresses     192.168.1.100 and 203.0.113.42. Malware samples have been ident",
+      "confidence": 0.39999999999999997
+    },
+    {
+      "value": "203.0.113.42",
+      "ioc_type": "ipv4",
+      "source": "Sample Data",
+      "timestamp": "2025-04-18T13:03:39.317735",
+      "context": "cture includes IP addresses     192.168.1.100 and 203.0.113.42. Malware samples have been identified with the",
+      "confidence": 0.65
+    },
+    {
+      "value": "evil-malware.com",
+      "ioc_type": "domain",
+      "source": "Sample Data",
+      "timestamp": "2025-04-18T13:03:39.317735",
+      "context": "ors have been observed using the malicious domain evil-malware.com     to distribute ransomware. The attack infrastr",
+      "confidence": 0.8999999999999999
+    },
+    {
+      "value": "malicious-domain.com",
+      "ioc_type": "domain",
+      "source": "Sample Data",
+      "timestamp": "2025-04-18T13:03:39.317735",
+      "context": "Victims receive phishing emails from fake@malicious-domain.com with links to     hxxps://malware-delivery.net/pa",
+      "confidence": 0.85
+    },
+    {
+      "value": "malware-delivery.net",
+      "ioc_type": "domain",
+      "source": "Sample Data",
+      "timestamp": "2025-04-18T13:03:39.317735",
+      "context": "ke@malicious-domain.com with links to     hxxps://malware-delivery.net/payload.exe          CVE-2023-1234 is being activ",
+      "confidence": 0.7999999999999999
+    },
+    {
+      "value": "payload.exe",
+      "ioc_type": "domain",
+      "source": "Sample Data",
+      "timestamp": "2025-04-18T13:03:39.317735",
+      "context": "om with links to     hxxps://malware-delivery.net/payload.exe          CVE-2023-1234 is being actively exploite",
+      "confidence": 0.75
+    },
+    {
+      "value": "fake@malicious-domain.com",
+      "ioc_type": "email",
+      "source": "Sample Data",
+      "timestamp": "2025-04-18T13:03:39.317735",
+      "context": "709          Victims receive phishing emails from fake@malicious-domain.com with links to     hxxps://malware-delivery.net/pa",
+      "confidence": 0.85
+    },
+    {
+      "value": "d41d8cd98f00b204e9800998ecf8427e",
+      "ioc_type": "md5",
+      "source": "Sample Data",
+      "timestamp": "2025-04-18T13:03:39.317735",
+      "context": "entified with the     following hashes:      MD5: d41d8cd98f00b204e9800998ecf8427e     SHA-1: da39a3ee5e6b4b0d3255bfef95601890afd807",
+      "confidence": 0.7
+    },
+    {
+      "value": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "ioc_type": "sha1",
+      "source": "Sample Data",
+      "timestamp": "2025-04-18T13:03:39.317735",
+      "context": "MD5: d41d8cd98f00b204e9800998ecf8427e     SHA-1: da39a3ee5e6b4b0d3255bfef95601890afd80709          Victims receive phishing emails from fak",
+      "confidence": 0.75
+    },
+    {
+      "value": "CVE-2023-1234",
+      "ioc_type": "cve",
+      "source": "Sample Data",
+      "timestamp": "2025-04-18T13:03:39.317735",
+      "context": "hxxps://malware-delivery.net/payload.exe          CVE-2023-1234 is being actively exploited in these attacks.",
+      "confidence": 0.7999999999999999
+    }
+  ],
+  "feeds": {
+    "AlienVault OTX": {
+      "url": "https://otx.alienvault.com/api/v1/pulses/subscribed",
+      "ioc_types": [
+        "ipv4",
+        "domain",
+        "url",
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "last_updated": null
+    },
+    "PhishTank": {
+      "url": "http://data.phishtank.com/data/online-valid.json",
+      "ioc_types": [
+        "url",
+        "domain"
+      ],
+      "last_updated": null
+    },
+    "Abuse.ch URLhaus": {
+      "url": "https://urlhaus.abuse.ch/downloads/csv/",
+      "ioc_types": [
+        "url",
+        "ipv4",
+        "domain"
+      ],
+      "last_updated": null
+    },
+    "EmergingThreats": {
+      "url": "https://rules.emergingthreats.net/blockrules/compromised-ips.txt",
+      "ioc_types": [
+        "ipv4"
+      ],
+      "last_updated": null
+    }
+  },
+  "trends": {
+    "total_iocs": 10,
+    "ioc_types": {
+      "ipv4": 2,
+      "domain": 4,
+      "email": 1,
+      "md5": 1,
+      "sha1": 1,
+      "cve": 1
+    },
+    "sources": {
+      "Sample Data": 10
+    },
+    "time_series": {
+      "dates": [
+        "2025-04-18"
+      ],
+      "counts": [
+        10
+      ]
+    },
+    "topics": {
+      "hxxps": 5,
+      "link": 4,
+      "attack": 3,
+      "victim": 3,
+      "receive": 3,
+      "phishing": 3,
+      "email": 3,
+      "includes": 2,
+      "ip": 2,
+      "address": 2,
+      "malware": 2,
+      "sample": 2,
+      "fake": 2,
+      "actively": 2,
+      "e": 1,
+      "infrastructure": 1,
+      "ident": 1,
+      "cture": 1,
+      "identified": 1,
+      "or": 1
+    },
+    "entities": {
+      "ORG": [
+        [
+          "IP",
+          2
+        ],
+        [
+          "fake@malicious-domain.com",
+          2
+        ]
+      ],
+      "CARDINAL": [
+        [
+          "203.0.113.42",
+          2
+        ],
+        [
+          "709",
+          1
+        ]
+      ]
+    },
+    "related_iocs": [
+      [
+        "192.168.1.100",
+        "203.0.113.42"
+      ],
+      [
+        "192.168.1.100",
+        "evil-malware.com",
+        "CVE-2023-1234"
+      ],
+      [
+        "malware-delivery.net",
+        "fake@malicious-domain.com",
+        "malicious-domain.com",
+        "payload.exe"
+      ],
+      [
+        "malicious-domain.com",
+        "malware-delivery.net",
+        "CVE-2023-1234",
+        "fake@malicious-domain.com",
+        "payload.exe"
+      ],
+      [
+        "fake@malicious-domain.com",
+        "malicious-domain.com"
+      ],
+      [
+        "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "fake@malicious-domain.com",
+        "malicious-domain.com"
+      ],
+      [
+        "CVE-2023-1234",
+        "payload.exe"
+      ]
+    ]
+  },
+  "timestamp": "2025-04-18T13:03:47.620621"
+}
